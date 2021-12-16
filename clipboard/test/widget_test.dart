@@ -5,15 +5,18 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:clipboard/uitls/qt_log.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:clipboard/main.dart';
-import 'package:clipboard/uitls/deviceId.dart';
+import 'package:clipboard/uitls/device_id.dart';
+import 'package:clipboard/uitls/qt_log.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
 
     var testDeviceId = DeviceId.getDeviceId();
+    var testLog = QtLog.log();
 
     print("this is man test .....$testDeviceId.");
     // Build our app and trigger a frame.

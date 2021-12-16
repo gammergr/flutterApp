@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:clipboard/uitls/deviceId.dart';
+import 'package:clipboard/uitls/device_id.dart';
 
 void main() {
   runApp(const MyApp());
